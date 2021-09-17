@@ -1,9 +1,9 @@
 package com.CRM.qa.listener;
 
+import com.relevantcodes.extentreports.LogStatus;
 import com.CRM.qa.reports.ExtentReport;
 import com.CRM.qa.testbase.BaseClass;
 import com.CRM.qa.utility.ScreenShotUtils;
-import com.relevantcodes.extentreports.LogStatus;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

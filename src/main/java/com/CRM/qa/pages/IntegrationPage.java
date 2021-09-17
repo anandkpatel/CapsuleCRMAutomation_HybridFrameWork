@@ -11,7 +11,7 @@ import java.util.List;
 
 public class IntegrationPage  extends BaseClass{
 	
-	@FindBy(xpath = "//h2[@class= 'settings-page-header']")
+	@FindBy(xpath = "//h1[@class='sp-page__title']")
 	WebElement integrationTitle;
 	
 	@FindAll(@FindBy(xpath = "//a[@class = 'btn-primary settings-page-integration-configure']"))

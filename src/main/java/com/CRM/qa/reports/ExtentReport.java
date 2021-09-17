@@ -1,10 +1,10 @@
 package com.CRM.qa.reports;
 
 
-import com.CRM.qa.testbase.BaseClass;
-import com.CRM.qa.utility.PropertyReader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.CRM.qa.testbase.BaseClass;
+import com.CRM.qa.utility.PropertyReader;
 
 import java.io.File;
 

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class UserPage  extends BaseClass{
 
 	
-	@FindBy(xpath = "//span [@class = 'party-details-title']")
+	@FindBy(xpath = "//span[@class = 'party-details__title']")
 	WebElement up_title;
 	
 	@FindBy(xpath = "//a[@aria-label = 'Cases']")

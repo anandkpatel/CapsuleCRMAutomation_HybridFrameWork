@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountPage extends BaseClass {
 
 	
-	@FindBy(xpath = "//h1[@class= 'settings-page-header']")
+	@FindBy(xpath = "//h1[@class = 'sp-page__title']")
 	WebElement accounttitle;
 	
 	// Constructor to initialize Web elements

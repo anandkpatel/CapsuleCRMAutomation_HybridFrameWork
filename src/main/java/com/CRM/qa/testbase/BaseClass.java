@@ -99,7 +99,7 @@ public class BaseClass {
         js = (JavascriptExecutor)driver;
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        eventHandlerInit();
+        //eventHandlerInit();
         driver.get(url);
         driver.manage().deleteAllCookies();
 

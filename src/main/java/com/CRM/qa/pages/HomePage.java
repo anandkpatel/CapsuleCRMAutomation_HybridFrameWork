@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage extends BaseClass {
 
 	
-	@FindBy(id = "ember18")
+	@FindBy(xpath = "//a[@aria-label='People & Organisations']")
 	WebElement peoplebtn;
 	
 	@FindBy(xpath = "//span[@class= 'nav-bar-username']")

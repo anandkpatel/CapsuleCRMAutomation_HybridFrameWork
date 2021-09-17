@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class TrackPage extends BaseClass {
 
 	
-	@FindBy(xpath = "//h2[@class= 'settings-page-header']")
+	@FindBy(xpath = "//h1[@class='sp-page__title']")
 	WebElement trackTitle;
 	
 	// Constructor to initialize Web elements

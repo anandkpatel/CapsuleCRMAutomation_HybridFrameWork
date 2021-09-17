@@ -9,34 +9,34 @@ import org.openqa.selenium.support.PageFactory;
 public class AccSettingUserPage extends BaseClass 
 {
 
-	@FindBy(xpath = "//h2[@class= 'settings-page-header']")
+	@FindBy(xpath = "//h1[@class='sp-page__title']")
 	WebElement accSetUserTitle;
 	
 	
-	@FindBy(xpath = "//a[@class= 'action btn-primary btn-primary-clear']")
+	@FindBy(xpath = "//a[normalize-space()='Add User']")
 	WebElement addNewUserBtn;
 	
 	
-	@FindBy(xpath = "//input[@id = 'register:firstnameDecorate:firstName']")
+	@FindBy(xpath = "//input[@name='register:firstnameDecorate:firstName']")
 	WebElement f_name;
 	
 
-	@FindBy(xpath = "//input[@id = 'register:lastNameDecorate:lastName']")
+	@FindBy(xpath = "//input[@name='register:lastNameDecorate:lastName']")
 	WebElement l_name;
 	
 
-	@FindBy(xpath = "//input[@id = 'register:emailDecorate:email']")
+	@FindBy(xpath = "//input[@name='register:emailDecorate:email']")
 	WebElement e_mail;
 	
 
-	@FindBy(xpath = "//input[@id = 'register:usernameDecorate:username']")
+	@FindBy(xpath = "//input[@name='register:usernameDecorate:username']")
 	WebElement u_name;
 	
 
 	@FindBy(xpath = "//input[@id = 'register:save']")
 	WebElement inviteUserBtn;
 	
-	@FindBy(xpath = "//tr[@class = 'even-row']//td[2]")
+	@FindBy(xpath = "//table[@class = 'chunky-table']//tr[2]//td[2]")
 	WebElement created_user_uname;
 	
 	

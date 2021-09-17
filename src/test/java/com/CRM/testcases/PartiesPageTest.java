@@ -27,12 +27,13 @@ public class PartiesPageTest extends BaseClass {
 	
 	
 	// Test case for New User Creation
-	@Test(priority = 1,  dataProvider= "create_user")
+	@Test(priority = 1,  dataProvider= "create_user", enabled = true)
 	public void verifying_new_user_creation(String title1, String first_name, String last_name, String job_title, String Organization, String tag,String ph_no, String e_id )
 	{
 		partiespage.new_user(title1, first_name, last_name, job_title, Organization, tag, ph_no, e_id);
 		String actual_title = userpage.userPage_title();
-		String expected_title = title1 + " " + first_name + " " + last_name ;
+		String expected_title = "Prof" + " " + first_name + " " + last_name ;
+		System.out.println("expected title" + expected_title);
 		Assert.assertEquals(actual_title, expected_title);
 		LogStatus.pass("User created Succesfully with name" + first_name +" " + last_name);
 	}

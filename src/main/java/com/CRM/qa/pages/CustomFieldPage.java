@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CustomFieldPage extends BaseClass{
 
-	@FindBy(xpath = "//h2[@class= 'settings-page-header']")
+	@FindBy(xpath = "//h1[@class='sp-page__title']")
 	WebElement customfieldtitle;
 	
 	// Constructor to initialize Web elements

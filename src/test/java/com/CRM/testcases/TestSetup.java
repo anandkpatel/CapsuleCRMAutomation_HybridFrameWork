@@ -35,7 +35,8 @@ public class TestSetup extends BaseClass {
 	@AfterSuite
 	public void afterSuite() 
 	{
-		ExtentReport.report.flush();  
+		ExtentReport.report.flush();
+		ExtentReport.report.close();
 	}
   
 }

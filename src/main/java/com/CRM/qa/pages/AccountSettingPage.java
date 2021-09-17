@@ -9,49 +9,34 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountSettingPage extends BaseClass{
 
 	
-	@FindBy(xpath = "//span[@class= 'settings-content-menu-title']")
+	@FindBy(xpath = "//h1[@class='sp-portal__title sp-page__title']")
 	WebElement accountpagetitle;
 	
-	@FindBy(xpath = "//a[@href = '/settings/account']")
+	@FindBy(xpath = "//a[@href = '/settings/plan']")
 	WebElement accountlink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/account/invoices']")
-	WebElement invoicelink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/account/export']")
-	WebElement exportlink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/account/appearance']")
-	WebElement appearancelink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/dropbox']")
-	WebElement mailDropBoxlink;
-	
-	@FindBy(xpath = "//li//a[@href = '/settings/users']")
+
+	@FindBy(xpath = "//a[@href = '/settings/users']")
 	WebElement userlink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/opportunities']")
-	WebElement oppurtunitylink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/tracks/opportunities']")
-	WebElement tracklink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/categories']")
-	WebElement taskcatagorylink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/customfields/party']")
-	WebElement customFieldlink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/tags/party']")
-	WebElement tagslink;
-	
+
 	@FindBy(xpath = "//a[@href = '/settings/integrations']")
 	WebElement Integrationlink;
-	
-	@FindBy(xpath = "//a[@href = '/settings/trash']")
-	WebElement trashlink;
-	
-	
+
+	@FindBy(xpath = "//a[@href = '/settings/dropbox']")
+	WebElement mailDropBoxlink;
+
+	@FindBy(xpath = "//a[@href = '/settings/opportunities']")
+	WebElement salesPipeline;
+
+	@FindBy(xpath = "//a[@href = '/settings/tracks']")
+	WebElement tracklink;
+
+	@FindBy(xpath = "//a[@href = '/settings/categories']")
+	WebElement taskcatagorylink;
+
+	@FindBy(xpath = "//a[@href = '/settings/customfields']")
+	WebElement customFieldlink;
+
+
 	// Constructor to initialize Web elements
 	public AccountSettingPage()
 	{
@@ -65,33 +50,12 @@ public class AccountSettingPage extends BaseClass{
 	}
 	
 	// To click on account link
-	public com.CRM.qa.pages.AccountPage clickOnAccount()
+	public AccountPage clickOnAccount()
 	{
 		accountlink.click();
-		return new com.CRM.qa.pages.AccountPage();
+		return new AccountPage();
 	}
-	
-	// To click on account link
-	public InvoicePage clickOnInvoice()
-	{
-		invoicelink.click();
-		return new InvoicePage();
-	}
-	
-	// To click on Export link
-	public ExportPage clickOnExport() 
-	{
-		exportlink.click();
-		return new ExportPage();
-	}
-	
-	// To click on Appearance link
-	public AppearancePage clickOnAppearance() 
-	{
-		appearancelink.click();
-		return new AppearancePage();
-	}
-		
+
 	// To click on MailDropBox link
 	public MailDropBoxPage clickOnMailDropBox() 
 	{
@@ -107,9 +71,9 @@ public class AccountSettingPage extends BaseClass{
 	}
 	
 	// To click on Opportunity link
-	public OppurtunityPage clickOnOppurtunity() 
+	public OppurtunityPage clickOnsalesPipeline()
 	{
-		oppurtunitylink.click();
+		salesPipeline.click();
 		return new OppurtunityPage();
 	}
 	
@@ -134,13 +98,7 @@ public class AccountSettingPage extends BaseClass{
 		customFieldlink.click();
 		return new CustomFieldPage();
 	}
-	
-	// To click on Tags link
-	public TagPage clickOnTagslink() 
-	{
-		tagslink.click();
-		return new TagPage();
-	}
+
 	
 	// To click on Integration link
 	public IntegrationPage clickOnIntegrationlink() 
@@ -148,12 +106,5 @@ public class AccountSettingPage extends BaseClass{
 		Integrationlink.click();
 		return new IntegrationPage();
 	}
-	
-	// To click on Trash link
-	public TrashPage clickOnTrashLink() 
-	{
-		trashlink.click();
-		return new TrashPage();
-	}
-	
+
 }
