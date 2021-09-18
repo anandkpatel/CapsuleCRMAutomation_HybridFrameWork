@@ -73,7 +73,7 @@ public class IteratorUtil extends BaseClass
     public static void clickOnFirstElementFromList(List<WebElement> elm1)
     {
 
-        myLinkedList = new LinkedList<>(elm1);
+        myLinkedList = new LinkedList<WebElement>(elm1);
         //Iterator<WebElement> it = elm1.iterator();
         //Sleep.sleepWithTime(1000);
         //it.next().click();
@@ -91,7 +91,7 @@ public class IteratorUtil extends BaseClass
         return it.next();*/
 
         //Update
-        myLinkedList = new LinkedList<>(elm1);
+        myLinkedList = new LinkedList<WebElement>(elm1);
         return myLinkedList.getFirst();
 
        }
@@ -113,7 +113,7 @@ public class IteratorUtil extends BaseClass
         }*/
 
         // Update
-        myLinkedList = new LinkedList<>(elm1);
+        myLinkedList = new LinkedList<WebElement>(elm1);
         myLinkedList.getLast().click();
         return myLinkedList.getLast();
     }
@@ -131,7 +131,7 @@ public class IteratorUtil extends BaseClass
         }*/
 
         // Update
-        myLinkedList = new LinkedList<>(elm1);
+        myLinkedList = new LinkedList<WebElement>(elm1);
         return myLinkedList.getLast();
     }
 
